@@ -2,11 +2,21 @@ import SectionHeader from '../components/common/SectionHeader';
 
 function About() {
   return (
-    <main className="pt-20">
-      <section className="py-20 bg-slate-950">
-        <div className="max-w-4xl mx-auto px-6">
+    <main
+      className="pt-20 min-h-screen bg-fixed bg-cover bg-center relative"
+      style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=2000&q=80')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="absolute inset-0 bg-slate-900/75 pointer-events-none"></div>
+
+      <section className="py-20">
+        <div className="max-w-4xl mx-auto px-6 relative z-10">
           <SectionHeader 
-            title="About Abhiram"
+            title="About Us"
             subtitle="From building skills to building solutions — driven by clarity, execution, and impact"
           />
 
@@ -16,8 +26,8 @@ function About() {
             <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-8 mb-8">
               <h3 className="text-2xl font-bold text-white mb-4">The Foundation</h3>
               <p className="text-slate-300 leading-relaxed mb-4">
-                My work is rooted in one principle: <strong>technology should solve real problems, not just look impressive</strong>. 
-                I started my journey by learning systems deeply — cloud, development, automation, and architecture — 
+                Our work is rooted in one principle: <strong>technology should solve real problems, not just look impressive</strong>. 
+                We started our journey by learning systems deeply — cloud, development, automation, and architecture — 
                 not to chase trends, but to understand how things actually work end to end.
               </p>
               <p className="text-slate-300 leading-relaxed">
@@ -30,7 +40,7 @@ function About() {
             <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-8 mb-8">
               <h3 className="text-2xl font-bold text-white mb-4">What I Do</h3>
               <p className="text-slate-300 leading-relaxed mb-4">
-                I work at the intersection of <strong>engineering, problem-solving, and mentorship</strong>.
+                We work at the intersection of <strong>engineering, problem-solving, and mentorship</strong>.
                 That means designing and delivering solutions that are practical, scalable, and future-ready.
               </p>
               <ul className="text-slate-300 space-y-2">
@@ -58,7 +68,7 @@ function About() {
                 but because of unclear direction and poor execution.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                My mission is simple: <strong>provide clarity, build systems, and create outcomes</strong> — whether that’s 
+                Our mission is simple: <strong>provide clarity, build systems, and create outcomes</strong> — whether that’s 
                 a strong technical product, a scalable architecture, or a career move done right.
               </p>
             </div>

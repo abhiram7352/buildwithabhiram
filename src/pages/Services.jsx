@@ -5,45 +5,94 @@ function Services() {
   const services = [
     {
       title: "Mock Interviews",
-      description: "Real interview scenarios with detailed feedback from someone who has been on both sides of the table.",
-      whoFor: "Final year students, job seekers",
-      outcome: "Confidence and clarity in technical interviews",
+      description: "Real interview simulations with structured feedback based on current industry expectations.",
+      whoFor: "Final-year students, job seekers, professionals switching roles",
+      outcome: "Confidence, clarity, and improved interview performance",
       price: "Premium"
     },
     {
-      title: "Resume Building",
-      description: "ATS-optimized resumes that highlight your strengths and get you past the initial screening.",
-      whoFor: "Students, career changers",
-      outcome: "Higher callback rates and interview invitations",
+      title: "Resume & LinkedIn Optimization",
+      description: "ATS-optimized resumes and LinkedIn profiles that clearly communicate impact, not just skills.",
+      whoFor: "Students, working professionals, career switchers",
+      outcome: "Higher response rates from recruiters and hiring managers",
       price: "Standard"
     },
     {
       title: "Interview Preparation",
-      description: "Comprehensive preparation covering technical, behavioral, and system design interviews.",
-      whoFor: "Software engineers, cloud professionals",
-      outcome: "Systematic approach to crack any interview",
+      description: "End-to-end interview preparation covering technical, behavioral, and system design rounds.",
+      whoFor: "Software engineers, cloud professionals, tech leads",
+      outcome: "A structured and repeatable approach to crack interviews",
       price: "Premium"
     },
     {
-      title: "Portfolio Websites",
-      description: "Professional portfolio websites that showcase your skills and projects effectively.",
-      whoFor: "Developers, designers, students",
-      outcome: "Stand out from the competition",
+      title: "Portfolio & Personal Branding Websites",
+      description: "Modern, performance-focused portfolio websites tailored to your career or business goals.",
+      whoFor: "Developers, designers, founders, consultants",
+      outcome: "Stronger personal brand and professional visibility",
       price: "Custom"
     },
     {
-      title: "Projects & Case Studies",
-      description: "Guided project development with real-world applications and detailed documentation.",
-      whoFor: "Students building their portfolio",
-      outcome: "Industry-relevant projects that impress recruiters",
+      title: "Project Development & Case Studies",
+      description: "Real-world, industry-aligned project development with proper architecture and documentation.",
+      whoFor: "Students, early-career professionals",
+      outcome: "Production-grade projects that stand out",
       price: "Premium"
     },
     {
-      title: "Web / App Solutions",
-      description: "Full-stack development services for businesses and startups looking to build digital products.",
-      whoFor: "Startups, small businesses",
-      outcome: "Production-ready applications",
+      title: "Web Application Development",
+      description: "Scalable, secure, and performance-optimized web applications built for real business use.",
+      whoFor: "Startups, SMEs, product teams",
+      outcome: "Production-ready web platforms",
       price: "Enterprise"
+    },
+    {
+      title: "Mobile Application Development",
+      description: "Cross-platform mobile apps designed for usability, performance, and long-term scalability.",
+      whoFor: "Startups, businesses, founders",
+      outcome: "High-quality mobile experiences",
+      price: "Enterprise"
+    },
+    {
+      title: "AI Integration & Intelligent Systems",
+      description: "Integrate AI-driven features like chatbots, recommendation systems, and automation into products.",
+      whoFor: "Startups, businesses, product teams",
+      outcome: "Smarter products with real AI impact",
+      price: "Enterprise"
+    },
+    {
+      title: "Chatbot Development",
+      description: "Custom chatbots for websites, applications, and internal tools using modern AI frameworks.",
+      whoFor: "Businesses, support teams, founders",
+      outcome: "Improved engagement and automated support",
+      price: "Custom"
+    },
+    {
+      title: "Cloud Architecture & Deployment",
+      description: "Design and deploy secure, scalable cloud infrastructure tailored to your workload.",
+      whoFor: "Startups, businesses, SaaS teams",
+      outcome: "Reliable and cost-optimized cloud environments",
+      price: "Enterprise"
+    },
+    {
+      title: "DevOps & CI/CD Solutions",
+      description: "Automated pipelines, infrastructure as code, and monitoring for faster and safer releases.",
+      whoFor: "Engineering teams, startups, enterprises",
+      outcome: "Faster deployments with fewer failures",
+      price: "Enterprise"
+    },
+    {
+      title: "System Design & Architecture Consulting",
+      description: "High-level architecture guidance for scalable, maintainable, and future-ready systems.",
+      whoFor: "Senior engineers, tech leads, founders",
+      outcome: "Clear technical direction and architectural confidence",
+      price: "Premium"
+    },
+    {
+      title: "Technical Mentorship & 1:1 Consulting",
+      description: "Focused, outcome-driven mentorship tailored to your career or business challenges.",
+      whoFor: "Individuals, professionals, founders",
+      outcome: "Clarity, direction, and faster decision-making",
+      price: "Premium"
     }
   ];
 

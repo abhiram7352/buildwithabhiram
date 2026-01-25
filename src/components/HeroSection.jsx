@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function HeroSection() {
   return (
     <section 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen pt-20 md:pt-24 flex items-center justify-center relative overflow-hidden"
       style={{
         backgroundImage: `url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80')`,
         backgroundSize: 'cover',
@@ -15,10 +15,6 @@ function HeroSection() {
       
       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
         <div className="space-y-8">
-          <div className="inline-block px-4 py-2 bg-cyan-900/30 border border-cyan-700/50 rounded-full text-cyan-300 text-sm font-medium mb-6">
-            Career Accelerator • Personal SaaS Founder • Tech Mentor
-          </div>
-          
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
             Building careers through
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
@@ -26,9 +22,13 @@ function HeroSection() {
             </span>
           </h1>
           
+          <div className="inline-block px-4 py-2 bg-cyan-900/30 border border-cyan-700/50 rounded-full text-cyan-300 text-sm font-medium">
+            Designing Systems • Solving Problems • Driving Growth
+          </div>
+          
           <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed">
-            Not theory. Not generic advice. Practical guidance from someone who has cracked certifications, 
-            secured internships, and built a community of successful professionals.
+            Not theory. Not generic advice. Practical guidance from someone who has built real systems,
+            delivered real solutions, and helped others do the same.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">

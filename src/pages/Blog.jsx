@@ -1,4 +1,7 @@
 import SectionHeader from '../components/common/SectionHeader';
+import { useState } from 'react';
+import posts from '../data/posts';
+import { Link } from 'react-router-dom';
 
 function Blog() {
   const categories = [
@@ -39,6 +42,11 @@ function Blog() {
     }
   ];
 
+  // add full content for Read more
+  // use posts data and provide pagination
+  const allPosts = posts;
+  const [visibleCount, setVisibleCount] = useState(4);
+
   return (
     <main className="pt-20">
       <section className="py-20 bg-slate-950">
@@ -62,8 +70,8 @@ function Blog() {
           <div>
             <h3 className="text-xl font-bold text-white mb-8">Featured Posts</h3>
             <div className="grid md:grid-cols-2 gap-8">
-              {featuredPosts.map((post, index) => (
-                <article key={index} className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 hover:bg-slate-800/50 transition-all duration-300 cursor-pointer">
+              {allPosts.slice(0, visibleCount).map((post, index) => (
+                <article key={post.slug} className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 hover:bg-slate-800/50 transition-all duration-300">
                   <div className="flex items-center justify-between mb-4">
                     <span className="px-3 py-1 bg-cyan-900/50 text-cyan-300 text-sm rounded-full">
                       {post.category}
@@ -75,19 +83,25 @@ function Blog() {
                     {post.title}
                   </h4>
                   
-                  <p className="text-slate-300 mb-4 leading-relaxed">
-                    {post.excerpt}
-                  </p>
-                  
-                  <div className="flex items-center justify-between">
-                    <span className="text-slate-400 text-sm">{post.readTime}</span>
-                    <span className="text-cyan-400 hover:text-cyan-300 font-medium cursor-pointer">
-                      Read More →
-                    </span>
+                  <div className="md:flex md:items-start md:gap-6">
+                    <img src={post.image} alt="" className="w-full md:w-40 h-28 object-cover rounded mb-4 md:mb-0" />
+                    <div className="flex-1">
+                      <p className="text-slate-300 mb-4 leading-relaxed">{post.excerpt}</p>
+                      <div className="flex items-center justify-between">
+                        <div className="text-slate-400 text-sm">{post.readTime} • by {post.author?.name}</div>
+                        <Link to={`/blog/${post.slug}`} className="text-cyan-400 hover:text-cyan-300 font-medium">Read more →</Link>
+                      </div>
+                    </div>
                   </div>
                 </article>
               ))}
             </div>
+
+            {visibleCount < allPosts.length && (
+              <div className="text-center mt-8">
+                <button onClick={() => setVisibleCount((v) => v + 4)} className="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold rounded-lg transition-colors">Load more</button>
+              </div>
+            )}
           </div>
           
           <div className="text-center mt-12">
